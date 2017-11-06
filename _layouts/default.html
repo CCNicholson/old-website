@@ -1,0 +1,56 @@
+---
+---
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+	<head>
+	{% include head.html %}
+	</head>
+	<body>
+		<section id="header">
+			{% include author-profile.html %}
+			{% include sidebar.html %}
+		</section>
+
+		<div id="introduction">
+			<div class="introduction-description">
+				<p>I'm currently a PhD candidate in the Gund Institute for Environment at the University of Vermont. I received my PhD from Tulane University in New Orleans in the Karubian Lab. My research focuses on the ecology, evolution, and conservation of plants and specifically, their responses to climate change and habitat loss. Scroll down below for more information about the projects and publications I am involved with. Background photo by the amazing Max Aliaga.</p>
+			</div>
+		</div>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+
+				{% for navigation-item in site.data.navigation-items %}
+				  <section id="{{ navigation-item.anchor-url }}" class="section">
+				    <div class="container">
+				    	<h2>{{ navigation-item.name }}</h2>
+
+						{% if navigation-item.name == 'Projects' %}
+
+							{% include projects.html %}
+
+						{% elsif navigation-item.name == 'Collaborators' %}
+
+				    		{% include collaborators.html %}
+
+				    	{% elsif navigation-item.name == 'Publications' %}
+
+				    		{% include publications.html %}
+
+				    	{% else %}
+
+					    	<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+
+				    	{% endif %}
+					</div>
+				  </section>
+				{% endfor %}
+			</div>
+		</div>
+		{% include footer.html %} 
+  </body>
+</html>

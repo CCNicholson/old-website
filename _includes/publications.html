@@ -1,0 +1,5 @@
+{% for publication in site.data.publications %}
+	<div class="publication">
+		<p>{{ publication.name }} {{ publication.name-citation }} <span class="publication-pdf-url"><a href="{{ publication.url-pdf }}" target="_blank">PDF</a></span></p>
+	</div>
+{% endfor %}

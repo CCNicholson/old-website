@@ -1,0 +1,48 @@
+<script src="/assets/js/vendor/smooth-scroll/dist/js/smooth-scroll.js"></script>
+<script>
+	/**
+	 * Vanilla spy-scroll to highlight navigation items.
+	 **/
+	document.addEventListener("DOMContentLoaded", function() {
+		// Initialize smooth scroll.
+		var scroll = new SmoothScroll('a[href*="#"]');
+
+		// Cache selectors.
+		let navigationElement = document.getElementById("nav");
+		let contentMainElement = document.getElementById("main");
+		let sections = contentMainElement.querySelectorAll(".section");
+
+	  	// Make a dictionary of section IDs to top offset.
+	  	const sectionIdToTopOffset = {};
+	  	console.log(sections);
+		sections.forEach(elem => {
+	    	sectionIdToTopOffset[elem.id] = elem.offsetTop;
+		});
+		const sectionKeys = Object.keys(sectionIdToTopOffset);
+
+		// Take the most recently traversed section, and make it "active".
+		window.onscroll = function() {
+			const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+			const traversedSections = sectionKeys.filter(function(key) {
+				return sectionIdToTopOffset[key] <= scrollPosition;
+			}).map(function(key) {
+			    return key;
+			});
+			const currentSectionKey = traversedSections[traversedSections.length - 1];
+
+			let lastKey;
+			if (currentSectionKey != null && lastKey != currentSectionKey) {
+				const activeSections = navigationElement.querySelector('.active');
+				if (activeSections != null) {
+					activeSections.setAttribute('class', ' ');
+				}
+
+				const activeSection = navigationElement.querySelector('a[href*=' + currentSectionKey + ']');
+				if (activeSection != null) {
+					activeSection.setAttribute('class', 'active');	
+				}
+			}
+		};
+	}, false);
+
+</script>

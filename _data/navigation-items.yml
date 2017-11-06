@@ -1,0 +1,14 @@
+- name: Projects
+  anchor-url: projects
+
+- name: Collaborators
+  anchor-url: collaborators
+
+- name: Publications
+  anchor-url: publications
+
+- name: Photos
+  anchor-url: photos
+
+- name: Contact
+  anchor-url: contact

@@ -1,1 +1,25 @@
-theme: jekyll-theme-dinky
+# Base Metadata
+title                    : "Charlies Nicholson"
+title_separator          : "-"
+name                     : "Charlie Nicholson"
+description              : "Gund Graduate Fellow, PhD, Rubenstein School of Environment and Natural Resources"
+url                      : "https://ccnicholson.github.io"
+
+# Site Author
+author:
+  name             : "Charlie Nicholson"
+  avatar           : "/assets/images/avatar.png"
+  bio              : "Gund Graduate Fellow, PhD, Rubenstein School of Environment and Natural Resources"
+  location         : Gund Institute for Environment, University of Vermont, 617 Main St. Burlington, VT, USA 05405
+  email            : ccnichol@uvm.edu
+  github           : https://github.com/CCNicholson
+  google_scholar   : https://scholar.google.se/citations?user=WDVOmakAAAAJ&hl=en
+  twitter          : https://twitter.com/buzznicholson
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: expanded
+
+gems:
+  - jekyll-babel

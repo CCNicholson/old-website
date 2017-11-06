@@ -1,0 +1,11 @@
+<nav id="nav">
+	<ul>
+	{% for navigation-item in site.data.navigation-items %}
+	  <li>
+	    <a data-scroll href="#{{ navigation-item.anchor-url }}">
+	      {{ navigation-item.name }}
+	    </a>
+	  </li>
+	{% endfor %}
+	</ul>
+</nav>
