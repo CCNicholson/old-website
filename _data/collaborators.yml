@@ -1,31 +1,39 @@
 - name: Keri Bryan
   url-image: collaborator--keri-bryan--SUS.png
   affiliation: Sewanee University of the South
+  url-bio: ""
 
 - name: Insu Koh
-  url-image: collaborator--insu-koh--UVM.png
   affiliation: University of Vermont
+  url-image: collaborator--insu-koh--UVM.png
+  url-bio: "http://www.insukoh.org/about-me.html"
   
 - name: Eric Lonsdorf
-  url-image: collaborator--eric-lonsdorf--NCP.png
   affiliation: Natural Capital Project
+  url-image: collaborator--eric-lonsdorf--NCP.png
+  url-bio: "http://environment.umn.edu/staff/eric-lonsdorf"
 
 - name: Steve Posner
-  url-image: collaborator--steve-posner--COMPASS.png
   affiliation: COMPASS
+  url-image: collaborator--steve-posner--COMPASS.png
+  url-bio: "https://www.compassscicomm.org/stephen-posner"
   
 - name: Leif Richardson
-  url-image: collaborator--leif-richardson--SEC.png
   affiliation: Stone Environmental
+  url-image: collaborator--leif-richardson--SEC.png
+  url-bio: "http://www.leifrichardson.org"
   
 - name: Taylor Rickets
   url-image: collaborator--taylor-rickets--UVM.png
-  affiliation: University of Vermont  
+  affiliation: University of Vermont
+  url-bio: ""
   
 - name: Henrik Smith
-  url-image: collaborator--henrik-smith--Lund.png
   affiliation: Lund University
+  url-image: collaborator--henrik-smith--Lund.png
+  url-bio: "http://www.biology.lu.se/henrik-g-smith"
   
 - name: Laura Sonter
   url-image: collaborator--laura-sonter--UQ.png
   affiliation: University of Queensland
+  url-bio: ""

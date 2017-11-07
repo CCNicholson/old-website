@@ -1,9 +1,9 @@
 {% for collaborator in site.data.collaborators %}
 	<div class="collaborator">
-		<div class="collaborator-image">
-			<img class="image" src="/assets/images/{{ collaborator.url-image }}">
+		<a class="collaborator-link" href="{{ collaborator.url-bio }}" target="_blank">
+			<img class="collaborator-image" src="/assets/images/{{ collaborator.url-image }}">
 			<div class="collaborator-name">{{ collaborator.name }}</div>
 			<div class="collaborator-affiliation">{{ collaborator.affiliation }}</div>
-		</div>
+		</a>
 	</div>
 {% endfor %}
